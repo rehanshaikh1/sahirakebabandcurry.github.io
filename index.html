@@ -19,8 +19,9 @@
     }
     body{
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
-    .hero{
+    .home{
         background-color: #efefef;
         /* height: 100vh;
         display: flex;
@@ -28,37 +29,37 @@
         align-items: center;
         flex-direction: column; */
     }
-    .hero h1{
+    .home h1{
 
         font-family: "Open Sans", sans-serif !important;
         font-weight: 700;
     }
-    .hero .py-100{
-        padding: 75px 0;
+    .home .py-100{
+        padding:  10px 0;
     }
-    .hero .taj{
+    .home .taj{
         width: 100px;
     }
-    .hero .text-content{
-        /* padding: 100px 0; */
+    .home .text-content{
+        padding: 100px 0;
     }
-    /* .hero .text-content h1{
+    /* .home .text-content h1{
         font-size: 56px;
     } */
-     .hero .l-content {
+     .home .l-content {
         height: 80%;
         align-items: flex-start;
     }
-    .hero .orderbtn{
+    .home .orderbtn{
         padding: 8px 35px;
         border-radius: 20px;
         background-color: #bc1823;
     }
-    .hero .r-content img{
+    .home .r-content img{
         width: 6w00px;
     }
 @media screen and (max-width: 992px) {
-  .hero .l-content{
+  .home .l-content{
     align-items: center;
     text-align: center;
   }
@@ -149,13 +150,35 @@
 </style>
 <body>
     
-    <section class="hero overflow-hidden" id="hero">
+    <section class="home overflow-hidden" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                        <img src="assets/img/0001.png" class="img-fluid taj" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#menu">Menu</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="container py-100">
         <div class="row">
             <div class="col-lg-6">
                 <div class="l-content d-flex flex-column">
                     <div class="top-img">
-                        <img src="assets/img/0001.png" class="img-fluid taj" alt="">
                     </div>
                     <div class="text-content my-auto">
                         <h1 class="display-2">SAHIRAH</h1>
@@ -187,7 +210,7 @@
                     <p>Indulge in a feel-good meal today and let us keep you smiling with every savory bite.</p>
                 </div>
 
-                    <a href="" class="btn btn-dark learnbtn">ORDER NOW</a>
+                    <a href="" class="btn btn-dark learnbtn">LEARN NOW</a>
                 </div>
             </div>
         </div>
@@ -487,7 +510,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12 bgdark">
-                <div class="risect h-100 ">
+                <div class="risect h-100 pt-5">
                     <div class="bx">
                         <h6 class="text-uppercase text-white">opening hours</h6>
                         <p>Mon - Thursday: 11am - 10pm ​</p>
@@ -520,10 +543,10 @@
         </div>
     </section>
     <footer class="footsect text-center d--fle" id="footsect">
-        <div class="content">
+        <div class="content mb-4">
             <img src="assets/img/0001.png" alt="" width="70px">
-            <h1 class="display-3 fw-bold">SAHIRAH</h1>
-            <h1 class="display-3 fw-bold">RESTAURANT</h1>
+            <h1 class="display-3 fw-bold mb-0">SAHIRAH</h1>
+            <h1 class="display-3 fw-bold">Kebab & Curry</h1>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
