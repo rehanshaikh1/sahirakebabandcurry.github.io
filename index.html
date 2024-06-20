@@ -57,6 +57,12 @@
     .hero .r-content img{
         width: 6w00px;
     }
+@media screen and (max-width: 992px) {
+  .hero .l-content{
+    align-items: center;
+    text-align: center;
+  }
+}
     .about{
         font-family: 'Telegraphic', sans-serif;
     }
@@ -71,6 +77,13 @@
     .about .redsection{
         background-color: #bc1823;
         color: #fff;
+    }
+    .about .redsection .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
     }
     .offer{
         background-color: #efefef;
@@ -126,7 +139,12 @@
         align-items: end;
         justify-content: center;
     }
-    
+    .footsect h1{
+        font-family: "Open Sans", sans-serif !important;
+        -webkit-text-stroke-color: #fff; 
+        -webkit-text-stroke-width: 0.8px; 
+        font-weight: 700;
+    }
     /* .offer .item-row{} */
 </style>
 <body>
@@ -163,7 +181,7 @@
             <div class="col-lg-6 redsection">
                 <div class="container p-5">
                     <h2>All About Sahirah</h2>
-                    <div class="py-3">
+                    <div class="py-3 my-auto">
                     <p>Step right up to our Kebab and Curry food station, where we specialize in serving up authentic mix of Mediterranean and Indian cuisine. Our succulent kebabs are grilled to perfection, offering a tantalizing mix of tender, marinated meats and vibrant, charred vegetables. </p>
                     <p>Pair your kebabs with fragrant curry dishes bursting with exotic spices and flavors that will leave you craving more. With each bite, you'll experience a symphony of tastes that will keep you coming back for that irresistible comfort and joy that only our food can bring. </p>
                     <p>Indulge in a feel-good meal today and let us keep you smiling with every savory bite.</p>
