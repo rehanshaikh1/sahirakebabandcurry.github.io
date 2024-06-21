@@ -17,6 +17,24 @@
         padding: 0;
         
     }
+    @font-face {
+  font-family: telemedium;
+  src: url(assets/fonts/Telegraf-Regular.woff2);
+}
+@font-face {
+  font-family: telebold;
+  src: url(assets/fonts/Telegraf-UltraBold.woff2);
+}
+@font-face {
+  font-family: canvabold;
+  src: url(assets/fonts/CanvaSans-Bold.woff2);
+}
+.canvafont{
+    font-family: canvabold;
+}
+.text-danger{
+    color: rgb(188, 24, 35) !important;
+}
     body{
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -31,7 +49,7 @@
     }
     .home h1{
 
-        font-family: "Open Sans", sans-serif !important;
+        font-family: canvabold;
         font-weight: 700;
     }
     .home .py-100{
@@ -54,6 +72,8 @@
         padding: 8px 35px;
         border-radius: 20px;
         background-color: #bc1823;
+        font-family: telemedium;
+
     }
     .home .r-content img{
         width: 6w00px;
@@ -65,7 +85,12 @@
   }
 }
     .about{
-        font-family: 'Telegraphic', sans-serif;
+        font-family: telemedium;
+    }
+    .about h2{
+        font-family: telebold;
+        font-weight: 600;
+        font-size: 42px;
     }
     .about p{
         font-weight: 100;
@@ -73,11 +98,21 @@
     .about .learnbtn{
         padding: 8px 35px;
         border-radius: 20px;
-        background-color: #333;
+        background-color: #000;
+        font-family: telemedium;
     }
     .about .redsection{
         background-color: #bc1823;
         color: #fff;
+    }
+    .about .redsection p{
+        color: #efefef;
+        font-weight: 200;
+        line-height: 1.8;
+    }
+    .about .redsection .container{
+        padding: 100px;
+
     }
     .about .redsection .container{
         height: 100%;
@@ -89,9 +124,19 @@
     .offer{
         background-color: #efefef;
     }
+    .offer h1{
+        font-family: telebold;
+    }
     .offer .box{
         border: none;
         border-radius: 30px;
+        font-family: telebold;
+        font-weight: 500;
+
+    }
+    nav a{
+        font-family: telemedium;
+
     }
     .offer .col-md-4{
         padding: 0 50px;
@@ -103,12 +148,17 @@
         padding: 8px 35px;
         border-radius: 20px;
         background-color: #bc1823;
+        font-family: telemedium;
+
     }
     .menu{
         font-family: "Open Sans", sans-serif !important;
     }
-    .infodetails{
-        font-family: 'Telegraphic', sans-serif;    }
+    .menu h4{
+        font-weight: 600;
+    }
+    /* .infodetails{
+        font-family: 'Telegraphic', sans-serif;    } */
     .infodetails .bx p{
         color: #efefef;
         font-weight: 200;
@@ -119,6 +169,12 @@
         padding: 50px 0;
         width: 230px;
 
+    }
+    .infodetails .bx h6{
+        font-family: telebold;
+    }
+    .infodetails .bx p{
+        font-family: telemedium;
     }
     .infodetails .risect{
         background-color: #000;
@@ -141,10 +197,10 @@
         justify-content: center;
     }
     .footsect h1{
-        font-family: "Open Sans", sans-serif !important;
+        font-family: canvabold;
         -webkit-text-stroke-color: #fff; 
-        -webkit-text-stroke-width: 0.8px; 
-        font-weight: 700;
+        -webkit-text-stroke-width: 0.3px; 
+        font-weight: 800;
     }
     /* .offer .item-row{} */
 </style>
@@ -180,7 +236,7 @@
                 <div class="l-content d-flex flex-column">
                     <div class="top-img">
                     </div>
-                    <div class="text-content my-auto">
+                    <div class="text-content my-auto ">
                         <h1 class="display-2">SAHIRAH</h1>
                         <h1 class="display-2">KEBAB & CURRY</h1>
                     </div>
@@ -199,15 +255,15 @@
     <section class="about overflow-hidden" id="about">
         <div class="row g-0">
             <div class="col-lg-6">
-                <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                <img src="assets/img/about.jpg" class="img-fluid h-100" alt="">
             </div>
             <div class="col-lg-6 redsection">
-                <div class="container p-5">
-                    <h2 class="fw-bold h1">All About Sahirah</h2>
+                <div class="container ">
+                    <h2 class="  h1 mb-0">All About Sahirah</h2>
                     <div class="py-3 my-auto">
-                    <p>Step right up to our Kebab and Curry food station, where we specialize in serving up authentic mix of Mediterranean and Indian cuisine. Our succulent kebabs are grilled to perfection, offering a tantalizing mix of tender, marinated meats and vibrant, charred vegetables. </p>
-                    <p>Pair your kebabs with fragrant curry dishes bursting with exotic spices and flavors that will leave you craving more. With each bite, you'll experience a symphony of tastes that will keep you coming back for that irresistible comfort and joy that only our food can bring. </p>
-                    <p>Indulge in a feel-good meal today and let us keep you smiling with every savory bite.</p>
+                    <p class="mb-0">Step right up to our Kebab and Curry food station, where we specialize in serving up authentic mix of Mediterranean and Indian cuisine. Our succulent kebabs are grilled to perfection, offering a tantalizing mix of tender, marinated meats and vibrant, charred vegetables. </p>
+                    <p class="mb-0">Pair your kebabs with fragrant curry dishes bursting with exotic spices and flavors that will leave you craving more. With each bite, you'll experience a symphony of tastes that will keep you coming back for that irresistible comfort and joy that only our food can bring. </p>
+                    <p class="mb-0">Indulge in a feel-good meal today and let us keep you smiling with every savory bite.</p>
                 </div>
 
                     <a href="" class="btn btn-dark learnbtn">LEARN NOW</a>
@@ -263,7 +319,7 @@
     </section>
     <section id="menu" class="menu my-5 overflow-hidden">
         <div class="head text-center pb-5">
-            <h1>Menu</h1>
+            <h1 class="fw-bold text-danger text-uppercase">Menu</h1>
         </div>
         <div class="container">
             <div class="row text-center">
