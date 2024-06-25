@@ -211,6 +211,28 @@
     width: 100%;
     object-fit: cover;
 }
+.gallery{
+    background-color: #efefef;
+}
+.gallery h1{
+    font-family: telebold;
+}
+.gallery-box img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.gallery-box{
+    overflow: hidden;
+}
+.gallery-box img:hover{
+    opacity: 0.7;
+    transform: scale(1.2);
+    transition: 0.7s ease;
+}
+.mt-20 {
+	margin-top: 23px;
+}
     /* .offer .item-row{} */
 </style>
 <body>
@@ -234,6 +256,9 @@
                   </li>
                   <li class="nav-item px-4">
                     <a class="nav-link" href="#menu">Menu</a>
+                  </li>
+                  <li class="nav-item px-4">
+                    <a class="nav-link" href="#gallery">Gallery</a>
                   </li>
                 </ul>
               </div>
@@ -564,6 +589,49 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="head text-center py-5">
+                <h1 class="mb-0">Gallery</h1>
+                <div class="my-5">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="gallery-box">
+                            <img src="https://plus.unsplash.com/premium_photo-1661310177352-f586bf23a403?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="gallery-box">
+                            <img src="https://images.unsplash.com/photo-1626005601500-44a5cf788c0d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="gallery-box">
+                            <img src="https://images.unsplash.com/photo-1508615263227-c5d58c1e5821?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-4">
+                        <div class="gallery-box">
+                            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=2969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="gallery-box">
+                            <img src="https://images.unsplash.com/photo-1584949602334-4e99f98286a9?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="gallery-box">
+                            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
